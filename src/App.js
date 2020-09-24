@@ -31,9 +31,11 @@ export default function App() {
       })
       const data = await response.json()
       updateFormInputs({
-        author: '',
-        content: '',
-        title: ''
+				title: '',
+				content: '',
+				code: '',
+				language: '',
+				day: '',
       })
       setPosts([data, ...posts])
     }catch(error){
