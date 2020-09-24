@@ -64,13 +64,13 @@ export default function App() {
 		<div className="App">
 			<div className="container">
 				<nav>
-					<h4>Post an Update</h4>
+					<h4>Post an Update To Your 100 Day Code Challenge!</h4>
 						<form onSubmit={handleSubmit}>
 							<label htmlFor="title">Title</label>
-							<input type="text" id="title" value={formInputs.title} onChange={handleChange}/>
+							<input type="text" id="title" value={formInputs.title} onChange={handleChange}/><br/>
 
-							<label htmlFor="content">Content</label>
-							<textarea id="content"  value={formInputs.content} onChange={handleChange}/>
+							<label htmlFor="content">Today I...</label>
+							<textarea id="content"  value={formInputs.content} onChange={handleChange}/><br/>
 
 							<label htmlFor="code">Code Snippets</label>
 							<input type="text" id="code" value={formInputs.code} onChange={handleChange}/>
@@ -79,10 +79,11 @@ export default function App() {
 							<input type="text" id="language" value={formInputs.language} onChange={handleChange}/>
 
 							<label htmlFor="day">Date</label>
-							<input type="text" id="day" value={formInputs.day} onChange={handleChange}/>
+							<input type="date" id="day" value={formInputs.day} onChange={handleChange}/><br/>
 
 							<input type="submit" className="submit" />
 						</form>
+						<hr />
 					</nav>
 
 				<Posts posts={posts}/>
