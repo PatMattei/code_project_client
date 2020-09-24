@@ -21,7 +21,7 @@ export default function App() {
 	const handleSubmit = async (event) => {
 		event.preventDefault()
     try{
-      const response = await fetch('http://localhost:3000/posts', {
+      const response = await fetch('http://localhost:3000/posts' || 'https://code-project-api.herokuapp.com/posts', {
         body: JSON.stringify(formInputs),
         method: 'POST',
         headers: {
@@ -45,7 +45,7 @@ export default function App() {
 
 	const getPosts = async () => {
 		try {
-				const response = await fetch('http://localhost:3000/posts')
+				const response = await fetch('http://localhost:3000/posts' || 'https://code-project-api.herokuapp.com/posts')
 				const data = await response.json();
 				setPosts(data);
 				console.log(data);
