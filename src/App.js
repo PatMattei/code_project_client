@@ -75,10 +75,10 @@ export default function App() {
 							<label htmlFor="code">Code Snippets</label>
 							<input type="text" id="code" value={formInputs.code} onChange={handleChange}/>
 
-							<label htmlFor="code">Language Used</label>
+							<label htmlFor="language">Language Used</label>
 							<input type="text" id="language" value={formInputs.language} onChange={handleChange}/>
 
-							<label htmlFor="code">Date</label>
+							<label htmlFor="day">Date</label>
 							<input type="text" id="day" value={formInputs.day} onChange={handleChange}/>
 
 							<input type="submit" className="submit" />
